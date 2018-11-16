@@ -84,7 +84,7 @@ let chaMd = message.channel.awaitMessages(filter, { max: 1, time: 400000, errors
 
         m.delete();
 
-message.channel.send('**هل توافق؟**\n\nان تتفاعل يوميا دون إنقطاع\nان تقوم بالمساعدة لكل الاعضاء\nان تقوم بمساعدة الادارة\nان تحاول ادخال 10 اعضاء للفريق\n\nإذا كنت موافق فأرسل : نعم\n\nإذا كنت غير موافق فأرسل : لا\n\nالمقدم : <@${message.author.id}>').then(ms => {
+message.channel.send('**هل توافق؟**\n\nان تتفاعل يوميا دون إنقطاع\nان تقوم بالمساعدة لكل الاعضاء\nان تقوم بمساعدة الادارة\nان تحاول ادخال 10 اعضاء للفريق\n\nإذا كنت موافق فأرسل : نعم\n\nإذا كنت غير موافق فأرسل : لا').then(ms => {
 
 let br = message.channel.awaitMessages(filter, { max: 1, time: 400000, errors: ['time'] })
 
