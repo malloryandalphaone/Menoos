@@ -104,7 +104,7 @@ ms.delete()
 
         setTimeout(() => {
 
-  b.edit(`**تم إرسآل التقديم بنجآح ، يرجى أنتظار قبولك**\n\n<@${message.author.id}> **.**`).then(m => m.delete(10000));
+  b.edit(`تم إرسآل تقديمك، يرجى إنتظآر النتيجة**\n\n<@${message.author.id}> **.**`).then(m => m.delete(10000));
 
         },3000);
 
@@ -114,7 +114,7 @@ if(!gg) return;
 
 if(gg) {
 
-gg.send('**سبب التقديم** : \n ${lan}\n\n**الخبرات** : \n ${md} \n\n**الأجابة على الشرط** : \n ${br} \n\n\n**مُقـدم بواسطة** :\n <@${message.author.id}>`)  
+gg.send(`**سبب التقديم** : \n ${lan}\n\n**الخبرات** : \n ${md} \n\n**الأجابة على الشرط** : \n ${br} \n\n\n**مُقـدم بواسطة** :\n <@${message.author.id}>`)  
 
 .setTimestamp()
 
