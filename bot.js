@@ -16,7 +16,7 @@ console.log('Elite Skill Is Ready!');
   let mention = message.mentions.members.first();
   let acRoom = client.channels.get('512960783353643018');
   let em = client.emojis.find(e => e.name === "false");
-  if(message.content.startsWith(prefix + "رفض")) {
+  if(message.content.startsWith(prefix + "مرفوض")) {
   if(message.guild.id !== '488259622730203137') return;
   if(!message.guild.member(message.author).hasPermission("MANAGE_ROLES")) return;
   if(!mention) return message.reply("منشن آسم المراد رفضه.");
@@ -32,7 +32,7 @@ client.on('message',async message => {
   let mySupport = message.guild.roles.find('name',role);
   let acRoom = client.channels.get('512960783353643018');
   let em = client.emojis.find(e => e.name === "true");
-  if(message.content.startsWith(prefix + "قبول")) {
+  if(message.content.startsWith(prefix + "مقبول")) {
     if(message.guild.id !== '488259622730203137') return;
     if(!message.guild.member(message.author).hasPermission("MANAGE_ROLES")) return;
     if(!mention) return message.reply('منشن آسم المراد قبوله');
