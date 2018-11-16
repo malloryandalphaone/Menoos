@@ -116,9 +116,6 @@ if(gg) {
 
 gg.send(`**سبب التقديم** : \n ${lan}\n\n**الخبرات** : \n ${md} \n\n**الأجابة على الشرط** : \n ${br} \n\n\n**مُقـدم بواسطة** :\n <@${message.author.id}>`)  
 
-.setTimestamp()
-
-});
 
 }        
 
